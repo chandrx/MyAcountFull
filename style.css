@@ -1,0 +1,100 @@
+*,
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+:root {
+    --bg-primary: rgb(114, 190, 220);
+    --bg-secondary: #5312cb;
+    --txt-primary: #222222;
+    --txt-secondsry: #f7f7f7;
+    --icons-bg-primary: tomato;
+    --icons-bg-secondary: blue;
+}
+.container{
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    height: 100vh;
+    background-color:  var(--bg-secondary);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 40%;
+    border: 1px solid white;
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+}
+.text-center {
+    text-align: center;
+}
+
+.title{
+    font-size: 2em;
+}
+
+.icons{
+    margin-top: 8px;
+    font-size: 35px;
+    color: var(--icons-bg-primary);
+}
+
+.description{
+    margin-top: 8px;
+    font-size: .7em;
+}
+
+.btn{
+    margin-top: 16px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.btn:hover{
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondsry);
+    --ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+@media screen and (max-width: 470px) {
+    .container{
+        background-color: coral;
+    }
+    .card {
+        width: 95%;
+    }
+    .title {
+        font-size: 2.5em;
+    }
+    .icons {
+        font-size: 2em;
+    }
+    .description {
+        font-size: 1.5em;
+    }
+    .btn {
+        padding: 16px;
+        font-size: 1.5em;
+    }
+}
+
+
